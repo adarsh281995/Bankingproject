@@ -49,7 +49,7 @@ def run():
         
 
         output=""
-        input_dict={'age':age,'balance':balance,'day': day,'duration': duration,'campaign': campaign,'pdays': pdays,'previous' : previous,'job':job,'marital':marital,'education':education,' default': default,'housing':housing,'loan':loan,'contact':contact,'month':month,'poutcome':poutcome,'deposit':deposit}
+        input_dict={'age':age,'balance':balance,'day': day,'duration': duration,'campaign': campaign,'pdays': pdays,'previous' : previous,'job':job,'marital':marital,'education':education,'default': default,'housing':housing,'loan':loan,'contact':contact,'month':month,'poutcome':poutcome,'deposit':deposit}
         input_df = pd.DataFrame([input_dict])
         if st.button("Predict"):
             output = predict(model=model, input_df=input_df)
